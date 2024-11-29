@@ -13,3 +13,5 @@ Em cảm ơn thầy và nhà trường đã giúp em học về cách tạo tran
 Và em cảm ơn anh chị trong doanh nghiệp organicfood đã giúp em lên ý tưởng tạo trang web cũng như tham khảo ạ
 
 Tất cả các ảnh em lấy từ trang organicfood để em tạo trang web
+
+Và logo em tạo bằng trang web này: https://taoanhdep.com/danh-muc/tao-logo/
