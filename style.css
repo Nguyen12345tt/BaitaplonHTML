@@ -1,190 +1,255 @@
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
+    font-family: Arial, sans-serif; /* Thiết lập font chữ cho toàn bộ trang */
+    margin: 0; /* Loại bỏ khoảng cách mặc định xung quanh trang */
+    padding: 0; /* Loại bỏ khoảng cách mặc định bên trong trang */
+    background-color: #f4f4f4; /* Thiết lập màu nền cho toàn bộ trang */
 }
 
 header {
-    background-color: #4CAF50;
-    color: white;
-    padding: 15px 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    background-color: #4CAF50; /* Màu nền cho phần đầu trang */
+    color: white; /* Màu chữ cho phần đầu trang */
+    padding: 15px 0; /* Khoảng cách bên trong phần đầu trang, trên dưới */
+    display: flex; /* Sử dụng flexbox để sắp xếp nội dung */
+    justify-content: space-between; /* Phân bổ khoảng cách đều giữa các phần tử con */
+    align-items: center; /* Căn giữa các phần tử con theo chiều dọc */
 }
 
 .container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 80%;
-    margin: 0 auto;
+    display: flex; /* Sử dụng flexbox để sắp xếp nội dung */
+    align-items: center; /* Căn giữa các phần tử con theo chiều dọc */
+    justify-content: space-between; /* Phân bổ khoảng cách đều giữa các phần tử con */
+    width: 80%; /* Chiều rộng của container là 80% */
+    margin: 0 auto; /* Căn giữa container theo chiều ngang */
 }
 
 nav {
-    flex: 1;
-    display: flex;
-    justify-content: flex-end;
+    flex: 1; /* Cho phép nav chiếm toàn bộ không gian có sẵn */
+    display: flex; /* Sử dụng flexbox để sắp xếp nội dung */
+    justify-content: flex-end; /* Đẩy các phần tử con về phía cuối (bên phải) */
 }
 
 nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    align-items: center;
+    list-style: none; /* Loại bỏ dấu chấm đầu dòng của danh sách */
+    padding: 0; /* Loại bỏ khoảng cách bên trong danh sách */
+    margin: 0; /* Loại bỏ khoảng cách bên ngoài danh sách */
+    display: flex; /* Sử dụng flexbox để sắp xếp nội dung */
+    align-items: center; /* Căn giữa các phần tử con theo chiều dọc */
 }
 
 nav ul li {
-    margin-left: 20px;
+    margin-left: 20px; /* Khoảng cách bên trái mỗi phần tử con */
 }
 
 nav ul li a {
-    color: white;
-    text-decoration: none;
+    color: white; /* Màu chữ của liên kết */
+    text-decoration: none; /* Loại bỏ gạch chân của liên kết */
 }
 
 .logo {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    overflow: hidden;
+    width: 100px; /* Chiều rộng của logo */
+    height: 100px; /* Chiều cao của logo */
+    border-radius: 50%; /* Bo tròn các góc của logo */
+    overflow: hidden; /* Ẩn phần thừa của logo nếu vượt quá kích thước */
 }
 
 section {
-    padding: 20px 0;
-    background-color: white;
-    margin: 20px 0;
+    padding: 20px 0; /* Khoảng cách bên trong phần section, trên dưới */
+    background-color: white; /* Màu nền của section */
+    margin: 20px 0; /* Khoảng cách bên ngoài section, trên dưới */
 }
 
 h1, h2, h3 {
-    color: #333;
-    margin: 0;
+    color: #333; /* Màu chữ của các tiêu đề */
+    margin: 0; /* Loại bỏ khoảng cách bên ngoài của các tiêu đề */
+}
+
+h3 .form-title {
+    display: block; /* Hiển thị dưới dạng khối */
+    margin-top: 20px; /* Khoảng cách trên tiêu đề */
+    width: 100%; /* Chiếm toàn bộ chiều rộng */
+    text-align: center; /* Căn giữa tiêu đề */
+    margin-bottom: 20px; /* Khoảng cách dưới tiêu đề */
 }
 
 .products-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
+    display: grid; /* Sử dụng grid layout để sắp xếp sản phẩm */
+    grid-template-columns: repeat(3, 1fr); /* 3 cột với kích thước bằng nhau */
+    gap: 20px; /* Khoảng cách giữa các phần tử lưới */
 }
 
 .product {
-    box-sizing: border-box;
-    padding: 10px;
-    background: #f9f9f9;
-    border: 1px solid #ddd;
-    text-align: center;
+    box-sizing: border-box; /* Bao gồm border và padding trong tổng chiều rộng và chiều cao */
+    padding: 10px; /* Khoảng cách bên trong sản phẩm */
+    background: #f9f9f9; /* Màu nền của sản phẩm */
+    border: 1px solid #ddd; /* Đường viền của sản phẩm */
+    text-align: center; /* Căn giữa văn bản trong sản phẩm */
 }
 
 .product img {
-    width: 50%;
-    height: auto;
+    width: 50%; /* Chiều rộng của hình ảnh là 50% */
+    height: auto; /* Tự động điều chỉnh chiều cao để giữ tỷ lệ */
 }
 
 .price {
-    color: #e74c3c;
-    font-size: 18px;
-    font-weight: bold;
+    color: #e74c3c; /* Màu chữ của giá */
+    font-size: 18px; /* Kích thước chữ của giá */
+    font-weight: bold; /* Chữ đậm cho giá */
 }
 
 .product-buttons {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 10px;
+    display: flex; /* Sử dụng flexbox để sắp xếp các nút */
+    flex-direction: column; /* Xếp chồng các nút theo chiều dọc */
+    align-items: center; /* Căn giữa các nút theo chiều ngang */
+    margin-top: 10px; /* Khoảng cách bên trên các nút */
 }
 
 .cart-button, .buy-now-button {
-    padding: 5px 10px;
-    font-size: 12px;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-    margin-top: 10px;
+    padding: 5px 10px; /* Khoảng cách bên trong các nút */
+    font-size: 12px; /* Kích thước chữ của các nút */
+    border-radius: 4px; /* Bo tròn các góc của các nút */
+    cursor: pointer; /* Con trỏ chuột chuyển thành bàn tay khi di chuyển qua nút */
+    transition: background-color 0.3s; /* Hiệu ứng chuyển màu nền trong 0.3 giây */
+    margin-top: 10px; /* Khoảng cách bên trên các nút */
 }
 
 .cart-button {
-    background-color: #4CAF50;
-    color: white;
+    background-color: #4CAF50; /* Màu nền của nút giỏ hàng */
+    color: white; /* Màu chữ của nút giỏ hàng */
 }
 
 .cart-button:hover {
-    background-color: #45a049;
+    background-color: #45a049; /* Màu nền của nút giỏ hàng khi di chuột qua */
 }
 
 .buy-now-button {
-    background-color: #e74c3c;
-    color: white;
+    background-color: #e74c3c; /* Màu nền của nút mua ngay */
+    color: white; /* Màu chữ của nút mua ngay */
 }
 
 .buy-now-button:hover {
-    background-color: #c0392b;
+    background-color: #c0392b; /* Màu nền của nút mua ngay khi di chuột qua */
 }
 
 form {
-    display: flex;
-    flex-direction: column;
+    display: flex; /* Sử dụng flexbox để sắp xếp nội dung */
+    flex-direction: column; /* Xếp chồng các phần tử theo chiều dọc */
 }
 
 form input, form textarea {
-    margin-bottom: 20px;
-    padding: 15px;
-    font-size: 16px;
-    width: 100%;
-    box-sizing: border-box;
+    margin-bottom: 20px; /* Khoảng cách bên dưới các phần tử */
+    padding: 15px; /* Khoảng cách bên trong các phần tử */
+    font-size: 16px; /* Kích thước chữ của các phần tử */
+    width: 100%; /* Chiều rộng của các phần tử là 100% */
+    box-sizing: border-box; /* Bao gồm border và padding trong tổng chiều rộng và chiều cao */
 }
 
 form button {
-    padding: 15px;
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    cursor: pointer;
+    padding: 15px; /* Khoảng cách bên trong nút */
+    background-color: #4CAF50; /* Màu nền của nút */
+    color: white; /* Màu chữ của nút */
+    border: none; /* Loại bỏ đường viền của nút */
+    cursor: pointer; /* Con trỏ chuột chuyển thành bàn tay khi di chuyển qua nút */
 }
 
 form button:hover {
-    background-color: #45a049;
+    background-color: #45a049; /* Màu nền của nút khi di chuột qua */
 }
 
 footer {
-    background-color: #4CAF50;
-    color: white;
-    text-align: center;
-    padding: 10px 0;
+    background-color: #4CAF50; /* Màu nền của phần chân trang */
+    color: white; /* Màu chữ của phần chân trang */
+    text-align: center; /* Căn giữa nội dung trong phần chân trang */
+    padding: 10px 0; /* Khoảng cách bên trong phần chân trang, trên dưới */
+}
+
+.review {
+    border: 1px solid #ddd; /* Đường viền của đánh giá */
+    padding: 15px; /* Khoảng cách bên trong đánh giá */
+    margin-bottom: 20px; /* Khoảng cách bên dưới đánh giá */
+    border-radius: 8px; /* Bo tròn các góc của đánh giá */
+    background-color: #f9f9f9; /* Màu nền của đánh giá */
+}
+
+.review h3 {
+    font-size: 1.2em; /* Kích thước chữ của tiêu đề đánh giá */
+    font-weight: bold; /* Chữ đậm cho tiêu đề đánh giá */
+    margin-bottom: 10px; /* Khoảng cách bên dưới tiêu đề đánh giá */
+    color: #4CAF50; /* Màu chữ của tiêu đề đánh giá */
+}
+
+.review em {
+    color: #FFD700; /* Màu chữ cho phần đánh giá (sao) */
+    font-size: 20px; /* Kích thước chữ cho phần đánh giá (sao) */
+    margin-bottom: 10px; /* Khoảng cách bên dưới phần đánh giá (sao) */
+    display: block; /* Hiển thị dưới dạng khối */
+}
+
+.review p {
+    font-size: 1em; /* Kích thước chữ của nội dung đánh giá */
+    line-height: 1.6; /* Chiều cao dòng của nội dung đánh giá */
+    margin-bottom: 5px; /* Khoảng cách bên dưới nội dung đánh giá */
+    color: #333; /* Màu chữ của nội dung đánh giá */
+}
+
+form#reviewForm {
+    margin-top: 30px; /* Khoảng cách phía trên mẫu đánh giá */
+    border-top: 2px solid #4CAF50; /* Đường viền trên cùng của mẫu đánh giá */
+    padding-top: 20px; /* Khoảng cách bên trong phía trên của mẫu đánh giá */
+    clear: both; /* Đảm bảo mẫu không bị chồng lấn với các phần tử trước đó */
+}
+
+form#reviewForm input, form#reviewForm textarea {
+    margin-bottom: 20px; /* Khoảng cách bên dưới các phần tử */
+    padding: 15px; /* Khoảng cách bên trong các phần tử */
+    font-size: 16px; /* Kích thước chữ của các phần tử */
+    width: 100%; /* Chiều rộng của các phần tử là 100% */
+    box-sizing: border-box; /* Bao gồm border và padding trong tổng chiều rộng và chiều cao */
+}
+
+form#reviewForm button {
+    padding: 15px; /* Khoảng cách bên trong nút */
+    background-color: #4CAF50; /* Màu nền của nút */
+    color: white; /* Màu chữ của nút */
+    border: none; /* Loại bỏ đường viền của nút */
+    cursor: pointer; /* Con trỏ chuột chuyển thành bàn tay khi di chuyển qua nút */
+}
+
+form#reviewForm button:hover {
+    background-color: #45a049; /* Màu nền của nút khi di chuột qua */
 }
 
 @media (max-width: 600px) { 
     #contact h2 { 
-    font-size: 20px; 
+        font-size: 20px; /* Kích thước chữ của tiêu đề phần Liên Hệ khi màn hình nhỏ hơn 600px */
     } 
     
     #contactForm input, #contactForm textarea { 
-    font-size: 12px; 
-    padding: 6px; 
+        font-size: 12px; /* Kích thước chữ của các phần tử trong mẫu Liên Hệ khi màn hình nhỏ hơn 600px */
+        padding: 6px; /* Khoảng cách bên trong các phần tử khi màn hình nhỏ hơn 600px */
     } 
     
     #contactForm button { 
-    font-size: 12px; 
-    padding: 6px 10px; 
+        font-size: 12px; /* Kích thước chữ của nút trong mẫu Liên Hệ khi màn hình nhỏ hơn 600px */
+        padding: 6px 10px; /* Khoảng cách bên trong nút khi màn hình nhỏ hơn 600px */
     } 
     
     .product { 
-    width: 100%; 
-    margin: 10px 0; 
+        width: 100%; /* Chiều rộng của sản phẩm là 100% khi màn hình nhỏ hơn 600px */
+        margin: 10px 0; /* Khoảng cách trên dưới của sản phẩm khi màn hình nhỏ hơn 600px */
     } 
     
     nav ul { 
-    flex-direction: column; 
+        flex-direction: column; /* Xếp các mục điều hướng theo chiều dọc khi màn hình nhỏ hơn 600px */
     } 
     
     .product-buttons { 
-    flex-direction: column; 
+        flex-direction: column; /* Xếp các nút sản phẩm theo chiều dọc khi màn hình nhỏ hơn 600px */
     } 
     
     .cart-button, .buy-now-button { 
-    width: 100%;
-    margin-bottom: 10px; 
+        width: 100%; /* Chiều rộng của các nút là 100% khi màn hình nhỏ hơn 600px */
+        margin-bottom: 10px; /* Khoảng cách bên dưới các nút khi màn hình nhỏ hơn 600px */
     } 
 }
+
     

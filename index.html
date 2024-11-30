@@ -1,43 +1,54 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cửa hàng thực phẩm sạch</title>
-    <link rel="stylesheet" href="style.css">
+    <!-- Phần đầu của tài liệu HTML, chứa thông tin về tài liệu như tiêu đề và các liên kết đến các tệp CSS -->
+    <meta charset="UTF-8"> <!-- Thiết lập mã hóa ký tự cho tài liệu là UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Đảm bảo trang web hiển thị tốt trên mọi thiết bị bằng cách thiết lập chế độ xem -->
+    <title>Cửa hàng thực phẩm sạch</title> <!-- Tiêu đề của trang web xuất hiện trên tab trình duyệt -->
+    <link rel="stylesheet" href="style.css"> <!-- Liên kết đến tệp CSS để áp dụng kiểu dáng cho trang web -->
 </head>
 <body>
+    <!-- Phần thân của tài liệu HTML, chứa nội dung chính của trang web -->
     <header>
+        <!-- Phần đầu trang, thường chứa logo và thanh điều hướng -->
         <div class="container">
-            <img src="Ảnh/logo.jpeg" alt="Logo Cửa Hàng Thực Phẩm Sạch" class="logo">
+            <img src="Ảnh/logo.jpeg" alt="Logo Cửa Hàng Thực Phẩm Sạch" class="logo"> <!-- Logo của trang web -->
             <nav>
+                <!-- Thanh điều hướng, chứa các liên kết đến các phần khác của trang web -->
                 <ul>
-                    <li><a href="#home">Trang Chủ</a></li>
-                    <li><a href="#about">Giới Thiệu</a></li>
-                    <li><a href="#products">Sản Phẩm</a></li>
-                    <li><a href="#contact">Liên Hệ</a></li>
+                    <li><a href="#home">Trang Chủ</a></li> <!-- Liên kết tới phần Trang Chủ trên trang hiện tại -->
+                    <li><a href="#about">Giới Thiệu</a></li> <!-- Liên kết tới phần Giới Thiệu trên trang hiện tại -->
+                    <li><a href="#products">Sản Phẩm</a></li> <!-- Liên kết tới phần Sản Phẩm trên trang hiện tại -->
+                    <li><a href="blog.html">Blog</a></li> <!-- Liên kết tới trang blog.html -->
+                    <li><a href="reviews.html">Đánh giá</a></li> <!-- Liên kết tới trang reviews.html -->
+                    <li><a href="promotions.html">Khuyến mãi</a></li> <!-- Liên kết tới trang promotions.html -->
+                    <li><a href="#contact">Liên Hệ</a></li> <!-- Liên kết tới phần Liên Hệ trên trang hiện tại -->
                 </ul>
             </nav>
         </div>
     </header>
     <section id="home">
+        <!-- Phần Trang Chủ, chứa tiêu đề và nội dung chào mừng -->
         <div class="container">
             <h1>Chào mừng đến với cửa hàng thực phẩm sạch</h1>
             <p>Nơi bạn có thể tìm thấy các loại thực phẩm tươi và hữu cơ.</p>
         </div>
     </section>
     <section id="about">
+        <!-- Phần Giới Thiệu, chứa thông tin về cửa hàng -->
         <div class="container">
             <h2>Về chúng tôi</h2>
             <p>Chúng tôi cung cấp những loại thực phẩm tươi và hữu cơ trực tiếp từ nông trại đến bàn ăn của bạn.</p>
         </div>
     </section>
     <section id="products">
+        <!-- Phần Sản Phẩm, chứa danh sách các sản phẩm -->
         <div class="container">
             <h2>Sản phẩm của chúng tôi</h2>
         </div>
         <div class="container products-container">
             <div class="product">
+                <!-- Một sản phẩm, gồm hình ảnh, tên sản phẩm, mô tả ngắn, giá cả và các nút thao tác -->
                 <img src="Ảnh/Anhsuahuuco.jpg" alt="Sản Phẩm 1">
                 <h3>Sữa hữu cơ</h3>
                 <p>Sữa hữu cơ Arla 200ml Đan Mạch</p>
@@ -47,6 +58,7 @@
                     <button class="buy-now-button">Mua ngay</button>
                 </div>
             </div>
+            <!-- Các sản phẩm khác tương tự -->
             <div class="product">
                 <img src="Ảnh/Caixanhhuuco.jpg" alt="Sản Phẩm 2">
                 <h3>Cải xanh hữu cơ</h3>
@@ -98,7 +110,7 @@
                 </div>
             </div>
             <div class="product">
-                <img src="Ảnh/camsanhhuuco.jpg" alt="Sản Phẩm 1">
+                <img src="Ảnh/camsanhhuuco.jpg" alt="Sản Phẩm 7">
                 <h3>Cam sành hữu cơ</h3>
                 <p>Cam sành ở Việt Nam</p>
                 <p class="price">Giá:20.000đ</p>
@@ -108,7 +120,7 @@
                 </div>
             </div>
             <div class="product">
-                <img src="Ảnh/taohuuco.jpg" alt="Sản Phẩm 1">
+                <img src="Ảnh/taohuuco.jpg" alt="Sản Phẩm 8">
                 <h3>Táo hữu cơ</h3>
                 <p>Táo được trồng ở Việt Nam</p>
                 <p class="price">Giá:40.000đ</p>
@@ -118,7 +130,7 @@
                 </div>
             </div>
             <div class="product">
-                <img src="Ảnh/nho.jpg" alt="Sản Phẩm 1">
+                <img src="Ảnh/nho.jpg" alt="Sản Phẩm 9">
                 <h3>Chùm nho Việt Nam</h3>
                 <p>Nho ngon</p>
                 <p class="price">Giá:10.000đ</p>
@@ -130,6 +142,7 @@
         </div>
     </section>
     <section id="contact">
+        <!-- Phần Liên Hệ, chứa mẫu liên hệ -->
         <div class="container">
             <h2>Liên Hệ Với Chúng Tôi</h2>
             <form id="contactForm">
@@ -141,9 +154,3 @@
         </div>
     </section>
     <footer>
-        <div class="container">
-            <p>&copy; 2024 Cửa Hàng Thực Phẩm Sạch. Mọi quyền được bảo lưu.</p>
-        </div>
-    </footer>
-</body>
-</html>
